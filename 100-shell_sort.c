@@ -1,12 +1,12 @@
 #include "sort.h"
 
 /**
-*swap - the positions of two elements into an array
+*swapp - the positions of two elements into an array
 *@array: array
 *@item_1: array element
 *@item_2: array element
 */
-void swap(int *array, int item_1, int item_2)
+void swapp(int *array, int item_1, int item_2)
 {
 
 	int a;
@@ -34,7 +34,7 @@ void shell_sort(int *array, size_t size)
 		for (l = gp; l < size; l++)
 			for (idx = l; idx >= gp &&
 			 (array[idx] < array[idx - gp]); idx -= gp)
-				swap(array, idx, idx - gp);
+				swapp(array, idx, idx - gp);
 		print_array(array, size);
 		gp /= 3;
 	}
