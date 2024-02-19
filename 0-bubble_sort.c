@@ -1,31 +1,31 @@
 #include "sort.h"
 /**
- * bu_sort - Function that sorts an array of ints
+ * bubble_sort - Function that sorts an array of ints
  * using bubble sort algorithm
  *
- * @arr: array of ints
- * @s: size of array
+ * @array: array of ints
+ * @size: size of array
  *
  */
-void bu_sort(int *arr, size_t s)
+void bubble_sort(int *array, size_t size)
 {
 	int a;
 	size_t l, n;
 
-	if (!arr || !s)
+	if (!array || !size)
 		return;
 
 	l = 0;
-	while (l < s)
+	while (l < size)
 	{
-		for (n = 0; n < s - 1; n++)
+		for (n = 0; n < size - 1; n++)
 		{
-			if (arr[n] > arr[n + 1])
+			if (array[n] > array[n + 1])
 			{
-				a = arr[n];
-				arr[n] = arr[n + 1];
-				arr[n + 1] = a;
-				print_arr(arr, s);
+				a = array[n];
+				array[n] = array[n + 1];
+				array[n + 1] = a;
+				print_array(array, size);
 			}
 		}
 		l++;
