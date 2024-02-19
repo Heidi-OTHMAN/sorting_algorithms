@@ -21,20 +21,20 @@ typedef struct listint_s
 
 
 /* print */
-void print_arr(const int *arr, size_t s);
+void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
 
-void bu_sort(int *arr, size_t s);
+void bubble_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
-void selection_sort(int *arr, size_t s);
-void quick_sort(int *arr, size_t s);
-void shell_sort(int *arr, size_t s);
+void selection_sort(int *array, size_t size);
+void quick_sort(int *array, size_t size);
+void shell_sort(int *array, size_t size);
 void cocktail_sort_list(listint_t **list);
-void merge_sort(int *arr, size_t s);
-void radix_sort(int *arr, size_t s);
-void counting_sort(int *arr, size_t s);
-void heap_sort(int *arr, size_t s);
-void bitonic_sort(int *arr, size_t s);
-void quick_sort_hoare(int *arr, size_t s);
+void merge_sort(int *array, size_t size);
+void radix_sort(int *array, size_t size);
+void counting_sort(int *array, size_t size);
+void heap_sort(int *array, size_t size);
+void bitonic_sort(int *array, size_t size);
+void quick_sort_hoare(int *array, size_t size);
 
 #endif
