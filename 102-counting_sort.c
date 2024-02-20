@@ -1,5 +1,6 @@
 #include "sort.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * counting_sort - sorts an array of integers in ascending order
