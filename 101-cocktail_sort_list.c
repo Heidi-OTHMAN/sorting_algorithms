@@ -3,26 +3,26 @@
 /**
  * swaap - swaps two nodes
  * @head: head of the list
- * @node1: first node to sort
- * @node2: second node to sort
+ * @node_1: first node to sort
+ * @node_2: second node to sort
  */
-void swaap(listint_t **head, listint_t *node1, listint_t *node2)
+void swaap(listint_t **head, listint_t *node_1, listint_t *node_2)
 {
 	listint_t *prev, *next;
 
-	prev = node1->prev;
-	next = node2->next;
+	prev = node_1->prev;
+	next = node_2->next;
 
 	if (prev != NULL)
-		prev->next = node2;
+		prev->next = node_2;
 	else
-		*head = node2;
-	node1->prev = node2;
-	node1->next = next;
-	node2->prev = prev;
-	node2->next = node1;
+		*head = node_2;
+	node_1->prev = node_2;
+	node_1->next = next;
+	node_2->prev = prev;
+	node_2->next = node_1;
 	if (next)
-		next->prev = node1;
+		next->prev = node_1;
 }
 /**
  * cocktail_sort_list - sorts a list using the cocktail sort algorithm
@@ -54,7 +54,7 @@ void cocktail_sort_list(listint_t **list)
 		{
 			if (head->n < head->prev->n)
 			{
-				swap(list, head->prev, head);
+				swaap(list, head->prev, head);
 				print_list(*list);
 				flaag = 1;
 				head = head->next;
