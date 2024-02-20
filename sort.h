@@ -45,5 +45,6 @@ void swaap(listint_t **head, listint_t *node_1, listint_t *node_2);
 void *_callooc(unsigned int nmembb, unsigned int size);
 void merge(int *array, int *a, int start, int med, int end);
 void mergesort(int *array, int *a, int start, int end);
+void heapify(int *array, int idx, int idx2, size_t size);
 
 #endif
