@@ -41,4 +41,6 @@ int lomuto_partition(int *array, ssize_t frst, ssize_t lst, size_t size);
 void swap(int *array, ssize_t item_1, ssize_t item_2);
 void swapp(int *array, int item_1, int item_2);
 listint_t *swap_node(listint_t *node, listint_t **list);
+void swaap(listint_t **head, listint_t *node1, listint_t *node2);
+
 #endif
