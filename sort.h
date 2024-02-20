@@ -43,5 +43,7 @@ void swapp(int *array, int item_1, int item_2);
 listint_t *swap_node(listint_t *node, listint_t **list);
 void swaap(listint_t **head, listint_t *node_1, listint_t *node_2);
 void *_callooc(unsigned int nmembb, unsigned int size);
+void merge(int *array, int *a, int start, int med, int end);
+void mergesort(int *array, int *a, int start, int end);
 
 #endif
